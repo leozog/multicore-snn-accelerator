@@ -1,0 +1,93 @@
+include "odin_types.fbs";
+
+namespace FB;
+
+table CmdResetAll {
+}
+
+table CmdResetOdinCore {
+    core_id: uint8;
+}
+
+table CmdWaitIdle {
+}
+
+table CmdWaitOdinCore {
+    core_id: uint8;
+}
+
+table CmdSendPacket {
+    core_id: uint8;
+    words: [uint32];
+}
+
+table CmdGetRegmem {
+    core_id: uint8;
+}
+
+table CmdSetRegmem {
+    core_id: uint8;
+    regmem: OdinRegmem;
+}
+
+table CmdGetNeuron {
+    core_id: uint8;
+    neur_id: uint32;
+}
+
+table CmdSetNeuron {
+    core_id: uint8;
+    neur_id: uint32;
+    neuron_words: NeuronWords128;
+}
+
+table CmdGetSynapse {
+    core_id: uint8;
+    pre_neur_id: uint32;
+    post_neur_id: uint32;
+}
+
+table CmdSetSynapse {
+    core_id: uint8;
+    pre_neur_id: uint32;
+    post_neur_id: uint32;
+    weight: uint8;
+}
+
+table CmdResetRouter {
+}
+
+table CmdAddRoute {
+    from_core: uint8;
+    from_neur: uint8;
+    to_core: uint8;
+    event_addr: uint32;
+}
+
+table CmdSetServerOutput {
+    from_core: uint8;
+    from_neur: uint8;
+    server_output: bool;
+}
+
+union Cmd_t {
+    CmdResetAll,
+    CmdResetOdinCore,
+    CmdWaitIdle,
+    CmdWaitOdinCore,
+    CmdSendPacket,
+    CmdGetRegmem,
+    CmdSetRegmem,
+    CmdGetNeuron,
+    CmdSetNeuron,
+    CmdGetSynapse,
+    CmdSetSynapse,
+    CmdResetRouter,
+    CmdAddRoute,
+    CmdSetServerOutput,
+}
+
+table Cmd {
+    handle: uint32;
+    t: Cmd_t;
+}

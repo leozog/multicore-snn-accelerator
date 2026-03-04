@@ -1,0 +1,18 @@
+#pragma once
+#include "cmd.hpp"
+#include "odin_server/odin_server.hpp"
+
+#include "cmd_add_route.hpp"
+#include "cmd_get_neuron.hpp"
+#include "cmd_get_regmem.hpp"
+#include "cmd_get_synapse.hpp"
+#include "cmd_reset_all.hpp"
+#include "cmd_reset_odin_core.hpp"
+#include "cmd_reset_router.hpp"
+#include "cmd_send_packet.hpp"
+#include "cmd_set_neuron.hpp"
+#include "cmd_set_regmem.hpp"
+#include "cmd_set_server_output.hpp"
+#include "cmd_set_synapse.hpp"
+#include "cmd_wait_idle.hpp"
+#include "cmd_wait_odin_core.hpp"

@@ -1,0 +1,37 @@
+include "cmd.fbs";
+include "odin_types.fbs";
+
+namespace FB;
+
+table CmdOutputNone {
+}
+
+table CmdOutputGetRegmem {
+    core_id: uint8;
+    regmem: OdinRegmem;
+}
+
+table CmdOutputGetNeuron {
+    core_id: uint8;
+    neur_id: uint32;
+    neuron_words: NeuronWords128;
+}
+
+table CmdOutputGetSynapse {
+    core_id: uint8;
+    pre_neur_id: uint32;
+    post_neur_id: uint32;
+    weight: uint8;
+}
+
+union CmdOutput_t {
+    CmdOutputNone,
+    CmdOutputGetRegmem,
+    CmdOutputGetNeuron,
+    CmdOutputGetSynapse,
+}
+
+table CmdOutput {
+    handle: uint32;
+    t: CmdOutput_t;
+}

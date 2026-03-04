@@ -1,0 +1,19 @@
+namespace FB;
+
+struct OdinRegmem {
+    open_loop: uint32;
+    syn_sign: [uint32:8];
+    reserved_syn_sign: [uint32:8];
+    burst_timeref: uint32;
+    aer_src_ctrl_nneur: uint32;
+    out_aer_monitor_en: uint32;
+    monitor_neur_addr: uint32;
+    monitor_syn_addr: uint32;
+    update_unmapped_syn: uint32;
+    propagate_unmapped_syn: uint32;
+    sdsp_on_syn_stim: uint32;
+}
+
+struct NeuronWords128 {
+    words: [uint32:4];
+}

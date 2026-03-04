@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_AER_STREAM_CTRL_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_AER_STREAM_CTRL" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="393.339 ns"></ZoomEndTime>
+      <Cursor1Time time="140.115 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/core_busy" type="logic">
+      <obj_property name="ElementShortName">core_busy</obj_property>
+      <obj_property name="ObjectShortName">core_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_i_addr" type="array">
+      <obj_property name="ElementShortName">aerin_i_addr[16:0]</obj_property>
+      <obj_property name="ObjectShortName">aerin_i_addr[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_i_req" type="logic">
+      <obj_property name="ElementShortName">aerin_i_req</obj_property>
+      <obj_property name="ObjectShortName">aerin_i_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_i_last" type="logic">
+      <obj_property name="ElementShortName">aerin_i_last</obj_property>
+      <obj_property name="ObjectShortName">aerin_i_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_i_ack" type="logic">
+      <obj_property name="ElementShortName">aerin_i_ack</obj_property>
+      <obj_property name="ObjectShortName">aerin_i_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_o_addr" type="array">
+      <obj_property name="ElementShortName">aerin_o_addr[16:0]</obj_property>
+      <obj_property name="ObjectShortName">aerin_o_addr[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_o_req" type="logic">
+      <obj_property name="ElementShortName">aerin_o_req</obj_property>
+      <obj_property name="ObjectShortName">aerin_o_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerin_o_ack" type="logic">
+      <obj_property name="ElementShortName">aerin_o_ack</obj_property>
+      <obj_property name="ObjectShortName">aerin_o_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_i_addr" type="array">
+      <obj_property name="ElementShortName">aerout_i_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">aerout_i_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_i_req" type="logic">
+      <obj_property name="ElementShortName">aerout_i_req</obj_property>
+      <obj_property name="ObjectShortName">aerout_i_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_i_ack" type="logic">
+      <obj_property name="ElementShortName">aerout_i_ack</obj_property>
+      <obj_property name="ObjectShortName">aerout_i_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_o_addr" type="array">
+      <obj_property name="ElementShortName">aerout_o_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">aerout_o_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_o_req" type="logic">
+      <obj_property name="ElementShortName">aerout_o_req</obj_property>
+      <obj_property name="ObjectShortName">aerout_o_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_o_last" type="logic">
+      <obj_property name="ElementShortName">aerout_o_last</obj_property>
+      <obj_property name="ObjectShortName">aerout_o_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aerout_o_ack" type="logic">
+      <obj_property name="ElementShortName">aerout_o_ack</obj_property>
+      <obj_property name="ObjectShortName">aerout_o_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AER_STREAM_CTRL/aer_stream_ctrl_0/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="LABELRADIX">false</obj_property>
+   </wvobject>
+</wave_config>

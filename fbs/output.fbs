@@ -1,0 +1,29 @@
+include "cmd.fbs";
+include "cmd_output.fbs";
+
+namespace FB;
+
+enum MessageType: uint8 {
+    INFO = 0,
+    WARNING = 1,
+    ERROR = 2,
+    DEBUG = 3,
+}
+
+table Message {
+    type: MessageType;
+    text: string;
+}
+
+table Spikes {
+    core_id: uint8;
+    words: [uint8];
+}
+
+table Output {
+    message: Message;
+    spikes: Spikes;
+    cmd_output: CmdOutput;
+}
+
+root_type Output;

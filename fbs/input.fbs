@@ -1,0 +1,10 @@
+
+include "cmd.fbs";
+
+namespace FB;
+
+table Input {
+    commands: [Cmd];
+}
+
+root_type Input;
